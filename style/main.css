@@ -1,4 +1,4 @@
-@import url(/css-style/style.css);
+@import url(/style/style.css);
 
 * {
     padding: 0;
@@ -22,21 +22,33 @@ html{
 }
 body{
     width: 100%;
+    height: auto;
     font-family: "Inconsolata", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-
    background-image: url(/assets/images/background-desktop.png);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-
+font-size: 1.8rem;
 
 }
 
+.flexing{
+    display: flex ;
+    flex-direction: column;
+   gap: 1rem;
+}
+.height{
+    height: 100vh;
+
+}
+.max-width{
+    max-width: 42rem;
+}
 .design-1{
 position: absolute;
 left: 0;
@@ -57,10 +69,17 @@ position: absolute;
     bottom: 50%;
     transform: translate(80%,90%);
     z-index: -1;
+
 }
 .design-4{
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    height: 80rem;
+    
+}
+.sizing{
+
+    height: 2rem;
 }

@@ -1,9 +1,9 @@
-const section1= document.querySelector('.movement')
-const section2 = document.querySelector('.cart-information')
+const section1= document.querySelector('.primary-card')
+const section2 = document.querySelector('.secondary-card')
 
 const inputName = document.getElementById('name') 
 const inputEmail = document.getElementById('email') 
-const inputUserNameGithub = document.getElementById('user-name-git') 
+const inputUserNameGithub = document.getElementById('user-github-name') 
 
 const nameP = document.querySelector('.if-have-problem-name')
 const emailP = document.querySelector('.if-have-problem-email')
@@ -12,21 +12,21 @@ const userName = document.querySelector('.if-have-problem-username')
 const userNamepro = document.querySelector('.user-name')
 const userNameGIthub = document.querySelector('.usernamegithub')
 
-const title = document.querySelector('.title1')
-const paragraph = document.querySelector('.paragraph1')
-
-const poeplenameB = document.querySelector('.spa-poeple-name')
+const title = document.querySelector('.main-title')
+const paragraph = document.querySelector('.main-paragraph')
+const spaParagraph = document.querySelector('.span-paragraph')
+const poeplenameB = document.querySelector('.span-name')
 const poeplename = document.querySelector('.poeplename')
-///////////
-const spaParagraph = document.querySelector('.spa-paragraph')
-const addrMail = document.querySelector('.addr-mail')
+const addrMail = document.querySelector('.user-mail')
 
 
+const container = document.querySelector('.container')
 
 
 const problemName = document.querySelector('.if-have-problem-name')
 const problemEmail = document.querySelector('.if-have-problem-email')
 const problemUsername= document.querySelector('.if-have-problem-username')
+
 function ticketBnt(){
     var inputNameValue = inputName.value
     var inputEmailValue =inputEmail.value
@@ -77,6 +77,8 @@ isValid = false
     paragraph.classList.add('hidden')
     poeplenameB.classList.remove('hidden')
     spaParagraph.classList.remove('hidden')
+    container.classList.add('height')
+    document.querySelector('.paragraph').classList.add('max-width')
  }
 
 }
@@ -85,35 +87,7 @@ isValid = false
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const form = document.getElementById('myForm');
+const form = document.getElementById('form-label');
 
 form.addEventListener('submit', function (event) {
   event.preventDefault(); 
