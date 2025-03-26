@@ -23,6 +23,7 @@ html{
 body{
     width: 100%;
     height: auto;
+     /* overflow: hidden;  */
     font-family: "Inconsolata", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -55,13 +56,14 @@ left: 0;
 bottom: 0;
 z-index: -1;
 width: 55rem;
-
+ 
 }
 .design-2{
 position: absolute;
     right: 0;
     top: 5rem;
     z-index: -1;
+    
 }
 .design-3{
     position: absolute;
@@ -76,10 +78,8 @@ position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    height: 80rem;
     
 }
 .sizing{
-
     height: 2rem;
 }
